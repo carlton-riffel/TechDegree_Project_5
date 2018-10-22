@@ -9,6 +9,7 @@ text-align: center;
   font-size: 16px;
   box-shadow: 0px 10px rgba(200,200,200,.5);
 }
+
 input::placeholder{
   color:#DADADA;
 }
@@ -24,7 +25,7 @@ font-family: sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-padding: 15 50;
+padding: 15px 50px;
 }
 
 .containerItems a {
@@ -40,6 +41,12 @@ padding: 15px;
 .containerItems img:hover
 {
     -webkit-box-shadow: 0 0 0 0 rgba(200,200,200,0);
-       -moz-box-shadow: 0 0 0 0 rgba(200,200,200,0;
+       -moz-box-shadow: 0 0 0 0 rgba(200,200,200,0);
             box-shadow: 0 0 0 0 rgba(200,200,200,0);
+}
+
+@media (max-width:600px){
+
+  .containerItems a {padding:5px;}
+  .containerItems {padding:10px 10px;}
 }
